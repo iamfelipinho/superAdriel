@@ -1,0 +1,31 @@
+const int botao = 4; // pino 4 - botao entrada
+const int led = 23;  // pino 23 - led Saida
+//constante inteiro led_pin = pino 23 esp32
+
+//variavel para armazenar o status do botao
+int EstadoBotao = 0;
+
+void setup() {
+  
+  Serial.begin(115200);
+  //Inicializa o pino botao como entrada
+  pinMode(botao, INPUT);
+  //inicializa o pino do LED como saida
+  pinMode(led, OUTPUT);
+
+}
+
+void loop() {
+ // le o estado do valor do botao
+ EstadoBotao = digitalRead(botao);
+ Serial.println(EstadoBotao);
+ // verifica se o botao esta pressionado.
+ // se o estado do botao for HIGH
+ if (EstadoBotao == HIGH) {
+   digitalWrite(led, HIGH); //liga o led
+ } else {
+   digitalWrite(led, LOW); // desliga o led
+
+ }
+ 
+}

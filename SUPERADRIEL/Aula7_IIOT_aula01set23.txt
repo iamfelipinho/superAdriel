@@ -1,0 +1,17 @@
+Baixar a IDE Arduino - https://www.arduino.cc/en/software
+
+https://dl.espressif.com/dl/package_esp32_index.json
+
+- Instalar drivers
+Pasta Extra - CH9102_WIN
+Pasta Extra - CP210
+
+Abra o IDE Arduino e acesse Board Manager 
+Digite na pesquisa esp32
+	Instale esp32 by Espressif Systems
+Digite na pesquisa Adafruit
+
+Abra menu tools
+Esp32
+
+Clique em DOIT ESP 32 DEVKIT V1
